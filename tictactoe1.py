@@ -188,6 +188,7 @@ class TicTacToeGame:
         if self.turn == 1:
             print("Human, please choose a space!")
             validinput = False
+<<<<<<< HEAD
             while True:
                 user_input = input("Enter two numbers separated by a comma: ")
                 try:
@@ -206,6 +207,12 @@ class TicTacToeGame:
                 except ValueError:
                     print("Invalid input. Please enter two integers separated by a comma, like: 1,2")
             
+=======
+            
+            user_input = input("Enter two numbers separated by a comma: ")
+            humanrow, humancol = map(int, map(str.strip, user_input.split(',')))
+    
+>>>>>>> 1e29f540f2be39a522c9d253b8124f7cc27d4906
                  
             self.gameboard.entries[humanrow][humancol] = 1
             self.turn = 2
